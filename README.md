@@ -1,24 +1,76 @@
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://lightcode.lcapi.online/lightcode/logo-white.svg">
+  <img src="https://lightcode.lcapi.online/lightcode-logo-192.png" alt="Lightcode" width="80" height="80">
+</picture>
+
 # Lightcode
 
-Lightcode 是基于 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 定制的桌面 Agent，可读取和编辑文件、运行命令、规划任务和委派子任务，通过 Lightcone AI 账号使用订阅内的模型。
+### 即开即用，立刻上手�?
+日常任务、编程开发，还是打造自己的 Agent，从这里开始�?
+**Light in. Code out.**
 
-- [产品介绍](https://lightcode.lcapi.online/lightcode)
-- [下载 Windows x64 预览版](https://github.com/Lorry-San/lightcode-releases/releases/download/v0.2.1-alpha.5.20261018.1/Lightcode-0.2.1-alpha.5.20261018.1-win-x64-unsigned.exe)
-- [全部版本与更新说明](https://github.com/Lorry-San/lightcode-releases/releases)
-- [账号与订阅](https://lightcode.lcapi.online/wallet)
+![Preview](https://img.shields.io/badge/Status-Preview-6799fe?style=flat-square)
+![Windows x64](https://img.shields.io/badge/Platform-Windows_x64-181818?style=flat-square)
+[![MIT License](https://img.shields.io/badge/License-MIT-181818?style=flat-square)](LICENSE)
 
-本仓库仅存放 README、许可证和 Releases 安装包，不包含应用源码。源码仓库独立维护，不会随安装包发布到此仓库。
+[**下载 Windows �?�?*](https://github.com/Lorry-San/lightcode-releases/releases/download/v0.2.1-alpha.5.20261019.1/Lightcode-0.2.1-alpha.5.20261019.1-win-x64-unsigned.exe)
 
-## 安装
+[官网](https://lightcode.lcapi.online/lightcode) · [版本与更新说明](https://github.com/Lorry-San/lightcode-releases/releases) · [账号与订阅](https://lightcode.lcapi.online/wallet) · [问题反馈](https://github.com/Lorry-San/lightcode-releases/issues)
 
-在 Releases 中选择 Windows x64 安装包，下载后运行。首次使用需要在应用内通过浏览器登录 Lightcone AI，并开通 Lightcode 订阅。API 余额与 Lightcode 订阅独立。
+</div>
 
-预览版安装包可能未签名。可使用每个 Release 附带的 SHA-256 校验文件核对下载内容。
+---
 
-## 用量
+## 从想法到完成，让 Agent 接手
 
-Lightcode 订阅按 5 小时与 7 天两个独立窗口管理用量。界面显示已用百分比和重置时间；模型支持情况与消耗规则以订阅页面为准。
+Lightcode 是基�?[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 定制的桌�?Agent。它可以读取和编辑文件、运行命令、拆分任务并跟进执行。通过 Lightcone AI 账号登录，即可使用订阅内的模型，无需自行配置 API Key�?
+| 能力 | 可以做什�?|
+| :--- | :--- |
+| **读写文件与编�?* | 理解项目结构、查找代码、修改文件，并运行命令验证结果�?|
+| **规划与协�?* | 维护计划和待办，将子任务委派给其�?Agent�?|
+| **模型选择** | 使用订阅支持�?Claude、GPT、Gemini 等模型，按模型能力选择思考强度�?|
+| **技能与插件** | 沿用 DSH 的插件架构，按需扩展工具、技能与工作流�?|
+| **权限与确�?* | 根据当前权限策略执行操作，需要审批时先请求确认�?|
 
-## 许可与致谢
+## 三步开�?
+1. **下载并安�?* �?�?[Releases](https://github.com/Lorry-San/lightcode-releases/releases) 获取 Windows x64 安装包�?2. **登录并开通订�?* �?在应用内点击登录，通过浏览器完�?Lightcone AI 授权；在[订阅页面](https://lightcode.lcapi.online/wallet)开�?Lightcode 套餐�?3. **描述你的任务** �?新建会话、选择订阅支持的模型，告诉 Lightcode 想完成什么。处理已有项目时，指定项目目录或相关文件�?
+> 可以这样开始：**“帮我理解这个项目，列出主要模块，再给出一个改进计划。�?*
 
-Lightcode 基于 DeepSeek Harness（Copyright © 2026 DeepSeek，MIT License）开发，本仓库保留其完整版权和许可文本，详见 [LICENSE](LICENSE)。第三方组件仍适用各自的许可证，相关声明随安装包提供。
+## 下载
+
+| 平台 | 当前版本 | 安装�?|
+| :--- | :--- | :--- |
+| **Windows x64** | `0.2.1-alpha.5.20261019.1` · Preview | [下载 .exe · �?272 MB](https://github.com/Lorry-San/lightcode-releases/releases/download/v0.2.1-alpha.5.20261019.1/Lightcode-0.2.1-alpha.5.20261019.1-win-x64-unsigned.exe) |
+
+Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进行代码签名，Windows 可能显示未知发布者提示。每�?Release 均附带版本说明和 SHA-256 校验文件�?
+<details>
+<summary>如何校验下载文件�?/summary>
+
+下载同一 Release 中的 `SHA256SUMS.txt`，在 PowerShell 中运行：
+
+```powershell
+Get-FileHash .\Lightcode-0.2.1-alpha.5.20261019.1-win-x64-unsigned.exe -Algorithm SHA256
+```
+
+将输出的 `Hash` 与校验文件中的值比较，两者应一致�?
+</details>
+
+## 关于订阅
+
+Lightcode 订阅使用 **5 小时 / 7 �?* 两个独立的用量窗口，分别累计、分别重置。界面显示已用百分比、进度条和重置时间，不显示具体金额额度。任一窗口用尽后，需等待对应窗口恢复�?
+模型支持范围、消耗规则与套餐售价以[订阅页面](https://lightcode.lcapi.online/wallet)为准�?*Lightcode 订阅�?API 余额独立，不能互相抵扣�?*
+
+## 许可与致�?
+感谢 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 提供 Agent 框架。Lightcode 在其基础上定制，保留上游�?**Copyright © 2026 DeepSeek** �?MIT 许可文本，详�?[LICENSE](LICENSE)。第三方组件适用各自的许可证，相关声明随安装包提供�?
+本仓库用于安装包分发，只保留 README、许可证�?Releases；应用源码在独立私有仓库中维护�?
+---
+
+<div align="center">
+
+**Lightcode · 即开即用，立刻上手�?*
+
+[下载桌面版](https://github.com/Lorry-San/lightcode-releases/releases) · [访问官网](https://lightcode.lcapi.online/lightcode)
+
+</div>
