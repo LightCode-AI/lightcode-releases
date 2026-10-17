@@ -3,7 +3,8 @@
 Lightcode 是基于 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 定制的桌面 Agent，可读取和编辑文件、运行命令、规划任务和委派子任务，通过 Lightcone AI 账号使用订阅内的模型。
 
 - [产品介绍](https://lightcode.lcapi.online/lightcode)
-- [下载安装包](https://github.com/Lorry-San/lightcode-releases/releases)
+- [下载 Windows x64 预览版](https://github.com/Lorry-San/lightcode-releases/releases/download/v0.2.1-alpha.5.20261018.1/Lightcode-0.2.1-alpha.5.20261018.1-win-x64-unsigned.exe)
+- [全部版本与更新说明](https://github.com/Lorry-San/lightcode-releases/releases)
 - [账号与订阅](https://lightcode.lcapi.online/wallet)
 
 本仓库仅存放 README、许可证和 Releases 安装包，不包含应用源码。源码仓库独立维护，不会随安装包发布到此仓库。
