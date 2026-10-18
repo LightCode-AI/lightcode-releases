@@ -7,70 +7,83 @@
 
 # Lightcode
 
-### 鍗冲紑鍗崇敤锛岀珛鍒讳笂鎵嬨€?
-鏃ュ父浠诲姟銆佺紪绋嬪紑鍙戯紝杩樻槸鎵撻€犺嚜宸辩殑 Agent锛屼粠杩欓噷寮€濮嬨€?
+### 即开即用，立刻上手。
+
+日常任务、编程开发，还是打造自己的 Agent，从这里开始。
+
 **Light in. Code out.**
 
 ![Preview](https://img.shields.io/badge/Status-Preview-6799fe?style=flat-square)
 ![Windows x64](https://img.shields.io/badge/Platform-Windows_x64-181818?style=flat-square)
 [![MIT License](https://img.shields.io/badge/License-MIT-181818?style=flat-square)](LICENSE)
 
-[**涓嬭浇 Windows 鐗?鈫?*](https://github.com/Lorry-San/lightcode-releases/releases/download/v0.2.1-alpha.5.20261019.4/Lightcode-0.2.1-alpha.5.20261019.4-win-x64-unsigned.exe)
+[**下载 Windows 版 →**](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261019.4/Lightcode-0.2.1-alpha.5.20261019.4-win-x64-unsigned.exe)
 
-[瀹樼綉](https://lightcode.lcapi.online/lightcode) 路 [鐗堟湰涓庢洿鏂拌鏄嶿(https://github.com/Lorry-San/lightcode-releases/releases) 路 [璐﹀彿涓庤闃匽(https://lightcode.lcapi.online/wallet) 路 [闂鍙嶉](https://github.com/Lorry-San/lightcode-releases/issues)
+[官网](https://lightcode.lcapi.online/lightcode) · [版本与更新说明](https://github.com/LightCode-AI/lightcode-releases/releases) · [账号与订阅](https://lightcode.lcapi.online/lightcode/subscription) · [问题反馈](https://github.com/LightCode-AI/lightcode-releases/issues)
 
 </div>
 
 ---
 
-## 浠庢兂娉曞埌瀹屾垚锛岃 Agent 鎺ユ墜
+## 从想法到完成，让 Agent 接手
 
-Lightcode 鏄熀浜?[DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 瀹氬埗鐨勬闈?Agent銆傚畠鍙互璇诲彇鍜岀紪杈戞枃浠躲€佽繍琛屽懡浠ゃ€佹媶鍒嗕换鍔″苟璺熻繘鎵ц銆傞€氳繃 Lightcone AI 璐﹀彿鐧诲綍锛屽嵆鍙娇鐢ㄨ闃呭唴鐨勬ā鍨嬶紝鏃犻渶鑷閰嶇疆 API Key銆?
-| 鑳藉姏 | 鍙互鍋氫粈涔?|
+Lightcode 是基于 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 定制的桌面 Agent。它可以读取和编辑文件、运行命令、拆分任务并跟进执行。通过 Lightcone AI 账号登录，即可使用订阅内的模型，无需自行配置 API Key。
+
+| 能力 | 可以做什么 |
 | :--- | :--- |
-| **璇诲啓鏂囦欢涓庣紪绋?* | 鐞嗚В椤圭洰缁撴瀯銆佹煡鎵句唬鐮併€佷慨鏀规枃浠讹紝骞惰繍琛屽懡浠ら獙璇佺粨鏋溿€?|
-| **瑙勫垝涓庡崗浣?* | 缁存姢璁″垝鍜屽緟鍔烇紝灏嗗瓙浠诲姟濮旀淳缁欏叾浠?Agent銆?|
-| **妯″瀷閫夋嫨** | 浣跨敤璁㈤槄鏀寔鐨?Claude銆丟PT銆丟emini 绛夋ā鍨嬶紝鎸夋ā鍨嬭兘鍔涢€夋嫨鎬濊€冨己搴︺€?|
-| **鎶€鑳戒笌鎻掍欢** | 娌跨敤 DSH 鐨勬彃浠舵灦鏋勶紝鎸夐渶鎵╁睍宸ュ叿銆佹妧鑳戒笌宸ヤ綔娴併€?|
-| **鏉冮檺涓庣‘璁?* | 鏍规嵁褰撳墠鏉冮檺绛栫暐鎵ц鎿嶄綔锛岄渶瑕佸鎵规椂鍏堣姹傜‘璁ゃ€?|
+| **读写文件与编程** | 理解项目结构、查找代码、修改文件，并运行命令验证结果。 |
+| **规划与协作** | 维护计划和待办，将子任务委派给其他 Agent。 |
+| **模型选择** | 使用订阅支持的 Claude、GPT、Gemini 等模型，按模型能力选择思考强度。 |
+| **技能与插件** | 沿用 DSH 的插件架构，按需扩展工具、技能与工作流。 |
+| **权限与确认** | 根据当前权限策略执行操作，需要审批时先请求确认。 |
 
-## 涓夋寮€濮?
-1. **涓嬭浇骞跺畨瑁?* 鈥?浠?[Releases](https://github.com/Lorry-San/lightcode-releases/releases) 鑾峰彇 Windows x64 瀹夎鍖呫€?2. **鐧诲綍骞跺紑閫氳闃?* 鈥?鍦ㄥ簲鐢ㄥ唴鐐瑰嚮鐧诲綍锛岄€氳繃娴忚鍣ㄥ畬鎴?Lightcone AI 鎺堟潈锛涘湪[璁㈤槄椤甸潰](https://lightcode.lcapi.online/wallet)寮€閫?Lightcode 濂楅銆?3. **鎻忚堪浣犵殑浠诲姟** 鈥?鏂板缓浼氳瘽銆侀€夋嫨璁㈤槄鏀寔鐨勬ā鍨嬶紝鍛婅瘔 Lightcode 鎯冲畬鎴愪粈涔堛€傚鐞嗗凡鏈夐」鐩椂锛屾寚瀹氶」鐩洰褰曟垨鐩稿叧鏂囦欢銆?
-> 鍙互杩欐牱寮€濮嬶細**鈥滃府鎴戠悊瑙ｈ繖涓」鐩紝鍒楀嚭涓昏妯″潡锛屽啀缁欏嚭涓€涓敼杩涜鍒掋€傗€?*
+## 三步开始
 
-## 涓嬭浇
+1. **下载并安装**：从 [Releases](https://github.com/LightCode-AI/lightcode-releases/releases) 获取 Windows x64 安装包。
+2. **登录并开通订阅**：在应用内点击登录，通过浏览器完成 Lightcone AI 授权；在[订阅页面](https://lightcode.lcapi.online/lightcode/subscription)开通 Lightcode 套餐。
+3. **描述你的任务**：新建会话、选择订阅支持的模型，告诉 Lightcode 想完成什么。处理已有项目时，指定项目目录或相关文件。
 
-| 骞冲彴 | 褰撳墠鐗堟湰 | 瀹夎鍖?|
+> 可以这样开始：**“帮我理解这个项目，列出主要模块，再给出一个改进计划。”**
+
+## 下载
+
+| 平台 | 当前版本 | 安装包 |
 | :--- | :--- | :--- |
-| **Windows x64** | `0.2.1-alpha.5.20261019.4` 路 Preview | [涓嬭浇 .exe 路 绾?272 MB](https://github.com/Lorry-San/lightcode-releases/releases/download/v0.2.1-alpha.5.20261019.4/Lightcode-0.2.1-alpha.5.20261019.4-win-x64-unsigned.exe) |
+| **Windows x64** | `0.2.1-alpha.5.20261019.4` · Preview | [下载 .exe · 约 274 MB](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261019.4/Lightcode-0.2.1-alpha.5.20261019.4-win-x64-unsigned.exe) |
 
-Lightcode 鐩墠澶勪簬棰勮闃舵锛屽姛鑳芥寔缁凯浠ｃ€傚綋鍓嶅畨瑁呭寘鏈繘琛屼唬鐮佺鍚嶏紝Windows 鍙兘鏄剧ず鏈煡鍙戝竷鑰呮彁绀恒€傛瘡涓?Release 鍧囬檮甯︾増鏈鏄庡拰 SHA-256 鏍￠獙鏂囦欢銆?
+Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进行代码签名，Windows 可能显示未知发布者提示。每个 Release 均附带版本说明和 SHA-256 校验文件。
+
 <details>
-<summary>濡備綍鏍￠獙涓嬭浇鏂囦欢锛?/summary>
+<summary>如何校验下载文件？</summary>
 
-涓嬭浇鍚屼竴 Release 涓殑 `SHA256SUMS.txt`锛屽湪 PowerShell 涓繍琛岋細
+下载同一 Release 中的 `SHA256SUMS.txt`，在 PowerShell 中运行：
 
 ```powershell
 Get-FileHash .\Lightcode-0.2.1-alpha.5.20261019.4-win-x64-unsigned.exe -Algorithm SHA256
 ```
 
-灏嗚緭鍑虹殑 `Hash` 涓庢牎楠屾枃浠朵腑鐨勫€兼瘮杈冿紝涓よ€呭簲涓€鑷淬€?
+将输出的 `Hash` 与校验文件中的值比较，两者应一致。
+
 </details>
 
-## 鍏充簬璁㈤槄
+## 关于订阅
 
-Lightcode 璁㈤槄浣跨敤 **5 灏忔椂 / 7 澶?* 涓や釜鐙珛鐨勭敤閲忕獥鍙ｏ紝鍒嗗埆绱銆佸垎鍒噸缃€傜晫闈㈡樉绀哄凡鐢ㄧ櫨鍒嗘瘮銆佽繘搴︽潯鍜岄噸缃椂闂达紝涓嶆樉绀哄叿浣撻噾棰濋搴︺€備换涓€绐楀彛鐢ㄥ敖鍚庯紝闇€绛夊緟瀵瑰簲绐楀彛鎭㈠銆?
-妯″瀷鏀寔鑼冨洿銆佹秷鑰楄鍒欎笌濂楅鍞环浠璁㈤槄椤甸潰](https://lightcode.lcapi.online/wallet)涓哄噯銆?*Lightcode 璁㈤槄涓?API 浣欓鐙珛锛屼笉鑳戒簰鐩告姷鎵ｃ€?*
+Lightcode 订阅使用 **5 小时 / 7 天** 两个独立的用量窗口，分别累计、分别重置。界面显示已用百分比、进度条和重置时间，不显示具体金额额度。任一窗口用尽后，需等待对应窗口恢复。
 
-## 璁稿彲涓庤嚧璋?
-鎰熻阿 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 鎻愪緵 Agent 妗嗘灦銆侺ightcode 鍦ㄥ叾鍩虹涓婂畾鍒讹紝淇濈暀涓婃父鐨?**Copyright 漏 2026 DeepSeek** 鍜?MIT 璁稿彲鏂囨湰锛岃瑙?[LICENSE](LICENSE)銆傜涓夋柟缁勪欢閫傜敤鍚勮嚜鐨勮鍙瘉锛岀浉鍏冲０鏄庨殢瀹夎鍖呮彁渚涖€?
-鏈粨搴撶敤浜庡畨瑁呭寘鍒嗗彂锛屽彧淇濈暀 README銆佽鍙瘉鍜?Releases锛涘簲鐢ㄦ簮鐮佸湪鐙珛绉佹湁浠撳簱涓淮鎶ゃ€?
+模型支持范围、消耗规则与套餐售价以[订阅页面](https://lightcode.lcapi.online/lightcode/subscription)为准。**Lightcode 订阅与 API 余额独立，不能互相抵扣。**
+
+## 许可与致谢
+
+感谢 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) 提供 Agent 框架。Lightcode 在其基础上定制，保留上游的 **Copyright © 2026 DeepSeek** 和 MIT 许可文本，详见 [LICENSE](LICENSE)。第三方组件适用各自的许可证，相关声明随安装包提供。
+
+本仓库用于安装包分发，只保留 README、许可证和 Releases；应用源码在独立私有仓库中维护。
+
 ---
 
 <div align="center">
 
-**Lightcode 路 鍗冲紑鍗崇敤锛岀珛鍒讳笂鎵嬨€?*
+**Lightcode · 即开即用，立刻上手。**
 
-[涓嬭浇妗岄潰鐗圿(https://github.com/Lorry-San/lightcode-releases/releases) 路 [璁块棶瀹樼綉](https://lightcode.lcapi.online/lightcode)
+[下载桌面版](https://github.com/LightCode-AI/lightcode-releases/releases) · [访问官网](https://lightcode.lcapi.online/lightcode)
 
 </div>
