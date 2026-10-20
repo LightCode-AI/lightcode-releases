@@ -17,7 +17,7 @@
 ![Windows x64](https://img.shields.io/badge/Platform-Windows_x64-181818?style=flat-square)
 [![MIT License](https://img.shields.io/badge/License-MIT-181818?style=flat-square)](LICENSE)
 
-[**下载 Windows 版 →**](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261019.4/Lightcode-0.2.1-alpha.5.20261019.4-win-x64-unsigned.exe)
+[**下载 Windows 版 →**](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261020.1/Lightcode-0.2.1-alpha.5.20261020.1-win-x64-unsigned.exe)
 
 [官网](https://lightcode.lcapi.online/lightcode) · [版本与更新说明](https://github.com/LightCode-AI/lightcode-releases/releases) · [账号与订阅](https://lightcode.lcapi.online/lightcode/subscription) · [问题反馈](https://github.com/LightCode-AI/lightcode-releases/issues)
 
@@ -49,7 +49,7 @@ Lightcode 是基于 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-h
 
 | 平台 | 当前版本 | 安装包 |
 | :--- | :--- | :--- |
-| **Windows x64** | `0.2.1-alpha.5.20261019.4` · Preview | [下载 .exe · 约 274 MB](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261019.4/Lightcode-0.2.1-alpha.5.20261019.4-win-x64-unsigned.exe) |
+| **Windows x64** | `0.2.1-alpha.5.20261020.1` · Preview | [下载 .exe · 约 274 MB](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261020.1/Lightcode-0.2.1-alpha.5.20261020.1-win-x64-unsigned.exe) |
 
 Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进行代码签名，Windows 可能显示未知发布者提示。每个 Release 均附带版本说明和 SHA-256 校验文件。
 
@@ -59,7 +59,7 @@ Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进�
 下载同一 Release 中的 `SHA256SUMS.txt`，在 PowerShell 中运行：
 
 ```powershell
-Get-FileHash .\Lightcode-0.2.1-alpha.5.20261019.4-win-x64-unsigned.exe -Algorithm SHA256
+Get-FileHash .\Lightcode-0.2.1-alpha.5.20261020.1-win-x64-unsigned.exe -Algorithm SHA256
 ```
 
 将输出的 `Hash` 与校验文件中的值比较，两者应一致。
