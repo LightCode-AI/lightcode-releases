@@ -17,9 +17,9 @@
 ![Windows x64](https://img.shields.io/badge/Platform-Windows_x64-181818?style=flat-square)
 [![MIT License](https://img.shields.io/badge/License-MIT-181818?style=flat-square)](LICENSE)
 
-[**下载 Windows 版 →**](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261020.1/Lightcode-0.2.1-alpha.5.20261020.1-win-x64-unsigned.exe)
+[**下载 Windows 版 →**](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261022.1/Lightcode-0.2.1-alpha.5.20261022.1-win-x64-unsigned.exe)
 
-[官网](https://lightcode.lcapi.online/lightcode) · [版本与更新说明](https://github.com/LightCode-AI/lightcode-releases/releases) · [账号与订阅](https://lightcode.lcapi.online/lightcode/subscription) · [问题反馈](https://github.com/LightCode-AI/lightcode-releases/issues)
+[官网](https://lightcode.lcapi.online/lightcode) · [API 状态](https://status.lcapi.online/) · [版本与更新说明](https://github.com/LightCode-AI/lightcode-releases/releases) · [账号与订阅](https://lightcode.lcapi.online/lightcode/subscription) · [问题反馈](https://github.com/LightCode-AI/lightcode-releases/issues)
 
 </div>
 
@@ -49,20 +49,33 @@ Lightcode 是基于 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-h
 
 | 平台 | 当前版本 | 安装包 |
 | :--- | :--- | :--- |
-| **Windows x64** | `0.2.1-alpha.5.20261020.1` · Preview | [下载 .exe · 约 274 MB](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261020.1/Lightcode-0.2.1-alpha.5.20261020.1-win-x64-unsigned.exe) |
+| **Windows x64** | `0.2.1-alpha.5.20261022.1` · Preview | [下载 .exe · 约 274 MB](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261022.1/Lightcode-0.2.1-alpha.5.20261022.1-win-x64-unsigned.exe) |
 
 Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进行代码签名，Windows 可能显示未知发布者提示。每个 Release 均附带版本说明和 SHA-256 校验文件。
+
+> **建议更新到本版本。** 早期版本与 DeepSeek Harness 共用同一个 Electron 数据目录，两个应用无法同时运行；本版起 Lightcode 使用独立数据目录，可以同时启动。
+
+### 最新变化
+
+- **可与 DeepSeek Harness 同时运行**：改用独立的应用数据目录，不再争抢单实例锁与缓存。
+- **重置卡修复**：使用重置卡只恢复当前周期的用量额度，不再影响订阅到期时间。
+- **订阅页改版**：套餐购买区独立展示，套餐描述支持 Markdown，并支持标记推荐套餐。
+- **界面与文案**：补齐中文与繁体中文翻译，顶栏新增 API 状态入口。
 
 <details>
 <summary>如何校验下载文件？</summary>
 
-下载同一 Release 中的 `SHA256SUMS.txt`，在 PowerShell 中运行：
+下载同一 Release 中的 `SHA256SUMS-20261022.txt`，在 PowerShell 中运行：
 
 ```powershell
-Get-FileHash .\Lightcode-0.2.1-alpha.5.20261020.1-win-x64-unsigned.exe -Algorithm SHA256
+Get-FileHash .\Lightcode-0.2.1-alpha.5.20261022.1-win-x64-unsigned.exe -Algorithm SHA256
 ```
 
-将输出的 `Hash` 与校验文件中的值比较，两者应一致。
+将输出的 `Hash` 与校验文件中的值比较，两者应一致。当前版本的 SHA-256 为：
+
+```
+A9933C8CA01CCA166D9A5DC69A127288BCD9243334ED8193631F3B0280D030FA
+```
 
 </details>
 
@@ -71,6 +84,8 @@ Get-FileHash .\Lightcode-0.2.1-alpha.5.20261020.1-win-x64-unsigned.exe -Algorith
 Lightcode 订阅使用 **5 小时 / 7 天** 两个独立的用量窗口，分别累计、分别重置。界面显示已用百分比、进度条和重置时间，不显示具体金额额度。任一窗口用尽后，需等待对应窗口恢复。
 
 模型支持范围、消耗规则与套餐售价以[订阅页面](https://lightcode.lcapi.online/lightcode/subscription)为准。**Lightcode 订阅与 API 余额独立，不能互相抵扣。**
+
+服务可用性与各渠道响应延迟可在 [status.lcapi.online](https://status.lcapi.online/) 查看，按分钟粒度公开最近 90 分钟的运行状况。
 
 ## 许可与致谢
 
@@ -84,6 +99,6 @@ Lightcode 订阅使用 **5 小时 / 7 天** 两个独立的用量窗口，分别
 
 **Lightcode · 即开即用，立刻上手。**
 
-[下载桌面版](https://github.com/LightCode-AI/lightcode-releases/releases) · [访问官网](https://lightcode.lcapi.online/lightcode)
+[下载桌面版](https://github.com/LightCode-AI/lightcode-releases/releases) · [访问官网](https://lightcode.lcapi.online/lightcode) · [API 状态](https://status.lcapi.online/)
 
 </div>
