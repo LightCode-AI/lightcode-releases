@@ -17,7 +17,7 @@
 ![Windows x64](https://img.shields.io/badge/Platform-Windows_x64-181818?style=flat-square)
 [![MIT License](https://img.shields.io/badge/License-MIT-181818?style=flat-square)](LICENSE)
 
-[**下载 Windows 版 →**](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261022.1/Lightcode-0.2.1-alpha.5.20261022.1-win-x64-unsigned.exe)
+[**下载 Windows 版 →**](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261022.2/Lightcode-0.2.1-alpha.5.20261022.2-win-x64-unsigned.exe)
 
 [官网](https://lightcode.lcapi.online/lightcode) · [API 状态](https://status.lcapi.online/) · [版本与更新说明](https://github.com/LightCode-AI/lightcode-releases/releases) · [账号与订阅](https://lightcode.lcapi.online/lightcode/subscription) · [问题反馈](https://github.com/LightCode-AI/lightcode-releases/issues)
 
@@ -49,7 +49,7 @@ Lightcode 是基于 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-h
 
 | 平台 | 当前版本 | 安装包 |
 | :--- | :--- | :--- |
-| **Windows x64** | `0.2.1-alpha.5.20261022.1` · Preview | [下载 .exe · 约 274 MB](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261022.1/Lightcode-0.2.1-alpha.5.20261022.1-win-x64-unsigned.exe) |
+| **Windows x64** | `0.2.1-alpha.5.20261022.2` · Preview | [下载 .exe · 约 274 MB](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261022.2/Lightcode-0.2.1-alpha.5.20261022.2-win-x64-unsigned.exe) |
 
 Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进行代码签名，Windows 可能显示未知发布者提示。每个 Release 均附带版本说明和 SHA-256 校验文件。
 
@@ -57,24 +57,24 @@ Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进�
 
 ### 最新变化
 
+- **一键更新**：左下角账户栏右侧的更新按钮自动完成检查、下载、重启与安装，不再弹出原生确认框；新版本启动后显示一次更新完成页面，报告版本与更新说明。
+- **多线路选择**：通用设置新增「API 线路」，可在中国大陆优化（默认）与 Cloudflare Anycast 之间切换。仅影响模型请求、用量查询与模型列表，登录不受影响，切换后无需重新登录。
+- **侧边栏身份**：左下角显示昵称与头像，与个人资料一致；修改后立即生效。
 - **可与 DeepSeek Harness 同时运行**：改用独立的应用数据目录，不再争抢单实例锁与缓存。
-- **重置卡修复**：使用重置卡只恢复当前周期的用量额度，不再影响订阅到期时间。
-- **订阅页改版**：套餐购买区独立展示，套餐描述支持 Markdown，并支持标记推荐套餐。
-- **界面与文案**：补齐中文与繁体中文翻译，顶栏新增 API 状态入口。
 
 <details>
 <summary>如何校验下载文件？</summary>
 
-下载同一 Release 中的 `SHA256SUMS-20261022.txt`，在 PowerShell 中运行：
+下载同一 Release 中的 `SHA256SUMS.txt`，在 PowerShell 中运行：
 
 ```powershell
-Get-FileHash .\Lightcode-0.2.1-alpha.5.20261022.1-win-x64-unsigned.exe -Algorithm SHA256
+Get-FileHash .\Lightcode-0.2.1-alpha.5.20261022.2-win-x64-unsigned.exe -Algorithm SHA256
 ```
 
 将输出的 `Hash` 与校验文件中的值比较，两者应一致。当前版本的 SHA-256 为：
 
 ```
-A9933C8CA01CCA166D9A5DC69A127288BCD9243334ED8193631F3B0280D030FA
+BB0A61831B28F6EB18CB5FD25B5D2349C2F818D3AEEEB92EA3784BB4D541352E
 ```
 
 </details>
