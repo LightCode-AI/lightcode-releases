@@ -17,7 +17,7 @@
 ![Windows x64](https://img.shields.io/badge/Platform-Windows_x64-181818?style=flat-square)
 [![MIT License](https://img.shields.io/badge/License-MIT-181818?style=flat-square)](LICENSE)
 
-[**下载 Windows 版 →**](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261022.6/Lightcode-0.2.1-alpha.5.20261022.6-win-x64-unsigned.exe)
+[**下载 Windows 版 →**](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-rc.5.20261104.1/Lightcode-0.2.1-rc.5.20261104.1-win-x64-unsigned.exe)
 
 [官网](https://lightcode.lcapi.online/lightcode) · [API 状态](https://status.lcapi.online/) · [版本与更新说明](https://github.com/LightCode-AI/lightcode-releases/releases) · [账号与订阅](https://lightcode.lcapi.online/lightcode/subscription) · [问题反馈](https://github.com/LightCode-AI/lightcode-releases/issues)
 
@@ -49,19 +49,18 @@ Lightcode 是基于 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-h
 
 | 平台 | 当前版本 | 安装包 |
 | :--- | :--- | :--- |
-| **Windows x64** | `0.2.1-alpha.5.20261022.6` · Preview | [下载 .exe · 约 274 MB](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-alpha.5.20261022.6/Lightcode-0.2.1-alpha.5.20261022.6-win-x64-unsigned.exe) |
+| **Windows x64** | `0.2.1-rc.5.20261104.1` · Preview | [下载 .exe · 约 285 MB](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-rc.5.20261104.1/Lightcode-0.2.1-rc.5.20261104.1-win-x64-unsigned.exe) |
 
 Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进行代码签名，Windows 可能显示未知发布者提示。每个 Release 均附带版本说明和 SHA-256 校验文件。
 
-> **建议更新到本版本。** 早期版本与 DeepSeek Harness 共用同一个 Electron 数据目录，两个应用无法同时运行；本版起 Lightcode 使用独立数据目录，可以同时启动。
+> **建议更新到本版本。** 从 `0.2.1-rc.5.20261031.1` 起可直接在应用内检查更新；更早版本需要手动安装一次。
 
 ### 最新变化
 
-- **修复线路保存失败**：在通用设置切换「API 线路」时会提示「保存失败，请重试」；现已可以正常保存，切换后对下一次模型请求生效。
-- **一键更新**：左下角账户栏右侧的更新按钮自动完成检查、下载、重启与安装，不再弹出原生确认框；新版本启动后显示一次更新完成页面，报告版本与更新说明。
-- **多线路选择**：通用设置新增「API 线路」，可在中国大陆优化（默认）与 Cloudflare Anycast 之间切换。仅影响模型请求、用量查询与模型列表，登录不受影响，切换后无需重新登录。
-- **侧边栏身份**：左下角显示昵称与头像，与个人资料一致；修改后立即生效。
-- **可与 DeepSeek Harness 同时运行**：改用独立的应用数据目录，不再争抢单实例锁与缓存。
+- **按需生图**：在对话中加载 `image-generation` 技能后，模型可生成图片并保存到工作区 `generated-images/`，再由界面展示；图片不会以 base64 进入上下文。
+- **更稳的上下文压缩**：压缩请求由后台指定的专用非图片模型执行，并使用该模型的输出上限；图片模型不会进入普通对话模型列表，也不会被误选为压缩模型。
+- **模型管理**：后台可编辑 Model ID，重命名会迁移授权与套餐权益；模型行支持图片输出开关与压缩模型单选。
+- **应用内更新**：安装包已带更新配置，可通过 `releases/latest/download/nightly.yml` 检查并升级到后续版本。
 
 <details>
 <summary>如何校验下载文件？</summary>
@@ -69,13 +68,13 @@ Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进�
 下载同一 Release 中的 `SHA256SUMS.txt`，在 PowerShell 中运行：
 
 ```powershell
-Get-FileHash .\Lightcode-0.2.1-alpha.5.20261022.6-win-x64-unsigned.exe -Algorithm SHA256
+Get-FileHash .\Lightcode-0.2.1-rc.5.20261104.1-win-x64-unsigned.exe -Algorithm SHA256
 ```
 
 将输出的 `Hash` 与校验文件中的值比较，两者应一致。当前版本的 SHA-256 为：
 
 ```
-0D9FABAC40E4BD747CF8C49F8A7E636E2CD51555045D981522CF5D5CD41876AF
+93FDE744D5BEB75CA4915802A73DAF549BE1D138EA127F20812A3B0B7326B311
 ```
 
 </details>
