@@ -17,7 +17,7 @@
 ![Windows x64](https://img.shields.io/badge/Platform-Windows_x64-181818?style=flat-square)
 [![MIT License](https://img.shields.io/badge/License-MIT-181818?style=flat-square)](LICENSE)
 
-[**下载 Windows 版 →**](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.2-rc.1.20261108.1/Lightcode-0.2.2-rc.1.20261108.1-win-x64-unsigned.exe)
+[**下载 Windows 版 →**](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.2-rc.1.20261108.2/Lightcode-0.2.2-rc.1.20261108.2-win-x64-unsigned.exe)
 
 [官网](https://lightcode.lcapi.online/lightcode) · [API 状态](https://status.lcapi.online/) · [版本与更新说明](https://github.com/LightCode-AI/lightcode-releases/releases) · [账号与订阅](https://lightcode.lcapi.online/lightcode/subscription) · [问题反馈](https://github.com/LightCode-AI/lightcode-releases/issues)
 
@@ -49,7 +49,7 @@ Lightcode 是基于 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-h
 
 | 平台 | 当前版本 | 安装包 |
 | :--- | :--- | :--- |
-| **Windows x64** | `0.2.2-rc.1.20261108.1` · Preview | [下载 .exe · 约 316 MB](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.2-rc.1.20261108.1/Lightcode-0.2.2-rc.1.20261108.1-win-x64-unsigned.exe) |
+| **Windows x64** | `0.2.2-rc.1.20261108.2` · Preview | [下载 .exe · 约 316 MB](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.2-rc.1.20261108.2/Lightcode-0.2.2-rc.1.20261108.2-win-x64-unsigned.exe) |
 
 Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进行代码签名，Windows 可能显示未知发布者提示。每个 Release 均附带版本说明和 SHA-256 校验文件。
 
@@ -57,6 +57,9 @@ Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进�
 
 ### 最新变化
 
+- **品牌显示修复**：恢复正常 Lightcode 图标、字标和窗口标题，不再显示“本地构建”及极小版本号；移除误带入的上游首页鲸鱼装饰。
+- **更新设置简化**：移除更新渠道选择及切换接口，自动更新固定使用安装包自带通道。
+- **API 线路下拉框**：通用设置使用下拉菜单切换线路，保留当前线路说明和保存失败提示。
 - **Agent Team 智能体团队协作**：在根会话的模型菜单中开启「智能体团队协作」，由主智能体协调子智能体与共享任务板；默认关闭，开启后可能增加 Token 消耗。
 - **会话级渠道路由**：模型请求携带稳定的会话 ID，网关按模型与会话维持渠道亲和，并向上游透传；不会把标识加入提示词。
 - **同步最新上游**：基于 DeepSeek Harness master `fcc0ad4621`，包含统一右键菜单、聊天引用、文件操作、插件管理和多语言体验改进；保留 Lightcode 登录、订阅、生图与专用压缩模型。
@@ -73,13 +76,13 @@ Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进�
 下载同一 Release 中的 `SHA256SUMS.txt`，在 PowerShell 中运行：
 
 ```powershell
-Get-FileHash .\Lightcode-0.2.2-rc.1.20261108.1-win-x64-unsigned.exe -Algorithm SHA256
+Get-FileHash .\Lightcode-0.2.2-rc.1.20261108.2-win-x64-unsigned.exe -Algorithm SHA256
 ```
 
 将输出的 `Hash` 与校验文件中的值比较，两者应一致。当前版本的 SHA-256 为：
 
 ```
-F20409130B3C7F17AB6B2F08ED82C38F52455094F21828D98193D7464E0A1FD5
+0E60DF611E3B55D4EAE97A662B21FB56474CFF3E9FC0DD3AB7BD881E2FD9B8DA
 ```
 
 </details>
