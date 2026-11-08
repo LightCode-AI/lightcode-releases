@@ -17,7 +17,7 @@
 ![Windows x64](https://img.shields.io/badge/Platform-Windows_x64-181818?style=flat-square)
 [![MIT License](https://img.shields.io/badge/License-MIT-181818?style=flat-square)](LICENSE)
 
-[**下载 Windows 版 →**](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-rc.5.20261105.1/Lightcode-0.2.1-rc.5.20261105.1-win-x64-unsigned.exe)
+[**下载 Windows 版 →**](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.2-rc.1.20261108.1/Lightcode-0.2.2-rc.1.20261108.1-win-x64-unsigned.exe)
 
 [官网](https://lightcode.lcapi.online/lightcode) · [API 状态](https://status.lcapi.online/) · [版本与更新说明](https://github.com/LightCode-AI/lightcode-releases/releases) · [账号与订阅](https://lightcode.lcapi.online/lightcode/subscription) · [问题反馈](https://github.com/LightCode-AI/lightcode-releases/issues)
 
@@ -49,7 +49,7 @@ Lightcode 是基于 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-h
 
 | 平台 | 当前版本 | 安装包 |
 | :--- | :--- | :--- |
-| **Windows x64** | `0.2.1-rc.5.20261105.1` · Preview | [下载 .exe · 约 285 MB](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.1-rc.5.20261105.1/Lightcode-0.2.1-rc.5.20261105.1-win-x64-unsigned.exe) |
+| **Windows x64** | `0.2.2-rc.1.20261108.1` · Preview | [下载 .exe · 约 316 MB](https://github.com/LightCode-AI/lightcode-releases/releases/download/v0.2.2-rc.1.20261108.1/Lightcode-0.2.2-rc.1.20261108.1-win-x64-unsigned.exe) |
 
 Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进行代码签名，Windows 可能显示未知发布者提示。每个 Release 均附带版本说明和 SHA-256 校验文件。
 
@@ -57,6 +57,9 @@ Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进�
 
 ### 最新变化
 
+- **Agent Team 智能体团队协作**：在根会话的模型菜单中开启「智能体团队协作」，由主智能体协调子智能体与共享任务板；默认关闭，开启后可能增加 Token 消耗。
+- **会话级渠道路由**：模型请求携带稳定的会话 ID，网关按模型与会话维持渠道亲和，并向上游透传；不会把标识加入提示词。
+- **同步最新上游**：基于 DeepSeek Harness master `fcc0ad4621`，包含统一右键菜单、聊天引用、文件操作、插件管理和多语言体验改进；保留 Lightcode 登录、订阅、生图与专用压缩模型。
 - **生图工具修复**：加载 `image-generation` 技能后，`generate_image` 在当前会话内常驻，不再因首次生图或空闲被卸载。
 - **多生图模型支持**：未指定模型时按目录顺序选择，图片模型配额耗尽或临时不可用时自动尝试下一个；也可通过模型 ID 或显示名指定。
 - **按需生图**：在对话中加载 `image-generation` 技能后，模型可生成图片并保存到工作区 `generated-images/`，再由界面展示；图片不会以 base64 进入上下文。
@@ -70,13 +73,13 @@ Lightcode 目前处于预览阶段，功能持续迭代。当前安装包未进�
 下载同一 Release 中的 `SHA256SUMS.txt`，在 PowerShell 中运行：
 
 ```powershell
-Get-FileHash .\Lightcode-0.2.1-rc.5.20261105.1-win-x64-unsigned.exe -Algorithm SHA256
+Get-FileHash .\Lightcode-0.2.2-rc.1.20261108.1-win-x64-unsigned.exe -Algorithm SHA256
 ```
 
 将输出的 `Hash` 与校验文件中的值比较，两者应一致。当前版本的 SHA-256 为：
 
 ```
-9F6854A692FB85F8CD53C70B2285DA66AE5CACC2B6DA7C32C5A1E77BFDFB1CA2
+F20409130B3C7F17AB6B2F08ED82C38F52455094F21828D98193D7464E0A1FD5
 ```
 
 </details>
